@@ -10,11 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@ovrdc">
-  <meta name="twitter:creator" content="@ovrdc">
+  <meta name="twitter:site" content="@SixmoAE">
+  <meta name="twitter:creator" content="@SixmoAE">
   <meta name="twitter:title" content="Parkersburg Zoning Example">
   <meta name="twitter:description" content="This map is in the beta stage, and should only be used as an initial reference for zoning issues. To verify zoning, use the zoning overlay in the layer control. For the definitive zoning for your parcel please contact the City of Parkersburg.">
-  <meta name="twitter:domain" content="www.ovrdc.org" />
+  <meta name="twitter:domain" content="www.sixmoae.com" />
   <meta name="twitter:image" content="https://www.ovrdc.org/apps/assets/post-images/large/zoning.png" />
   <!--Open Graph meta data-->
   <meta property="og:title" content="Parkersburg Zoning Example" />
@@ -27,7 +27,7 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="1200" />
   <meta property="og:description" content="This map is in the beta stage, and should only be used as an initial reference for zoning issues. To verify zoning, use the zoning overlay in the layer control. For the definitive zoning for your parcel please contact the City of Parkersburg." />
-  <meta property="og:url" content="https://www.ovrdc.org/apps/wellston-zoning.html" />
+  <meta property="og:url" content="https://bretallphin.github.io/zoning/" />
   <!--end meta and open graph-->
 
   <!--global fonts and jquery-->
@@ -42,10 +42,9 @@
   <!--Begin Map CSS and JS see _includes/map-header.html-->
   <script src="https://maps.google.com/maps/api/js?v=3"></script>
   
-  <!--Mapping via LeafletJS updated 07-15-2016 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
-  <link rel="stylesheet" href="https://www.ovrdc.org/apps/assets/ovrdc-map-plugins-leaflet-0.7.css" />
+  <!--Mapping via LeafletJS updated 04-6-2021 -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="https://www.ovrdc.org/apps/assets/ovrdc-map-plugins-leaflet-0.7.js"></script>
   
   <link rel="stylesheet" href="https://www.ovrdc.org/apps/assets/ovrdc-css/modern-ui.css" />
@@ -116,14 +115,14 @@ $("#hideTools").click(function() {
 });
 </script>
 
-    <div id="mapNote"><h5><a href='wellston/index.html'><i class='fa fa-reply-all'></i> Back to the Wellston GIS Portal Homepage</a></h5></div>
+    <div id="mapNote"><h5><a href='http://parkersburgcity.com/pc/services-2/planning-development/pd-overview/'><i class='fa fa-reply-all'></i> Back to the Parkersburg Planning and Dev. Page</a></h5></div>
     <div id="sidebarFooter">
-      <a href='http://www.ovrdc.org' target='blank' style='text-decoration:none;'>OVRDC</a> |
-      <a href="http://www.ovrdc.org/maps">Map Index</a> |
+      <a href='http://www.sixmoae.com' target='blank' style='text-decoration:none;'>Sixmo Inc.</a> |
+      <a href="http://www.sixmoae.com/services/city-services">Sixmo City Services</a> |
       <a href="#" data-toggle="modal" data-target="#introModal"><i class="fa fa-info-circle"></i> Map Info</a> |
       
     </div>
-    <span class="text-muted">Updated: 05/8/2015</span>
+    <span class="text-muted">Updated: 04/6/2021</span>
   </div>
 </div>
 <!--_includes/footer.html-->
@@ -138,7 +137,7 @@ $("#hideTools").click(function() {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title">Wellston Zoning Example</h2>
+          <h2 class="modal-title">Parkersburg Zoning</h2>
         </div>
         <div class="modal-body">
           A sample Parkersburg Zoning Map. The zoning information here should be considered a draft. For official zoning information contact the City of Parkersburg.
@@ -154,29 +153,29 @@ $("#hideTools").click(function() {
   
   <script>
 /*_includes/analytics.js*/
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-63802107-1', 'auto');
-ga('send', 'pageview');
+//ga('create', 'UA-63802107-1', 'auto');
+//ga('send', 'pageview');
 </script>
 
 </footer>
 
 <script>
 
-var windowUrl = window.location.href;
-$("#sidebarFooter").append("<a href='https://docs.google.com/forms/d/e/1FAIpQLSd53cAsweLYkkr75KUpN6lHpsQcKbV9XoRNtJEsFsUHdVIVuw/viewform?entry.1286129613&entry.2022340261&entry.519867356=" + windowUrl + "' target='_blank'>Feedback</a>");
+//var windowUrl = window.location.href;
+//$("#sidebarFooter").append("<a href='https://docs.google.com/forms/d/e/1FAIpQLSd53cAsweLYkkr75KUpN6lHpsQcKbV9XoRNtJEsFsUHdVIVuw/viewform?entry.1286129613&entry.2022340261&entry.519867356=" + windowUrl + "' target='_blank'>Feedback</a>");
 
 /*--OVRDC Jekyll Map Layout "template: true" --*/
 var mapOptions;
 if (L.Browser.mobile) {
     mapOptions = {
     zoomControl:false,
-    center: [39.1203, -82.5353],
-    zoom: 14,
+    center: [39.2568, -81.5418],
+    zoom: 13,
     maxZoom: 20,
     minZoom: 0,
     sleep: false,
@@ -187,8 +186,8 @@ if (L.Browser.mobile) {
 if (!L.Browser.mobile) {
     mapOptions = {
     zoomControl:false,
-    center: [39.1203, -82.5353],
-    zoom: 14,
+    center: [39.2568, -81.5418],
+    zoom: 13,
     maxZoom: 20,
     minZoom: 0,
     sleep: false,
@@ -634,7 +633,7 @@ loading.addTo(map);
 var start = Date.now(),
   csvloaded, omnivoreloaded, csvjoined, togeojson, tilesloaded;
 
-var wellstonzoning = new L.GeoJSON.AJAX('https://www.ovrdc.org/apps/assets/data/wellston_zoning.geojson', {
+var parkersburgzoning = new L.GeoJSON.AJAX('https://github.com/bretallphin/zoning/blob/main/PkbZoning1.geojson', {
    style: function(feature) {
 	  return {fillColor: feature.properties.color,
 		     color: '#000',
@@ -642,18 +641,18 @@ var wellstonzoning = new L.GeoJSON.AJAX('https://www.ovrdc.org/apps/assets/data/
         fillOpacity: 0.9};
    },
 	onEachFeature: function(feature, layer) {
-	layer.bindPopup('<b>' + feature.properties.Z_Descrip + '</b>' + '<br>' + 'Zoning Code: ' + feature.properties.Zone_Code);
+	layer.bindPopup('<b>' + feature.properties.Z_Descrip + '</b>' + '<br>' + 'layer: ' + feature.properties.Zone_Code);
 	}
 });
-var polling = new L.geoJson.ajax('https://www.ovrdc.org/apps/assets/data/wpolling.geojson', {
-  style: function(feature) {
-    return {fillOpacity: 0.4};
-  },
-  onEachFeature: function(feature, layer) {
-    layer.bindPopup(feature.properties.LocationID);
+//var polling = new L.geoJson.ajax('https://www.ovrdc.org/apps/assets/data/wpolling.geojson', {
+//  style: function(feature) {
+//    return {fillOpacity: 0.4};
+// },
+//  onEachFeature: function(feature, layer) {
+//    layer.bindPopup(feature.properties.LocationID);
     //layer.bindLabel(feature.properties.LocationID);
-  }
-});
+//  }
+// });
 
 layerControl.addOverlay(wellstonzoning, 'Zoning');
 layerControl.addOverlay(polling, 'Polling');
